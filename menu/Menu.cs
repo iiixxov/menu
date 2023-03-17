@@ -37,7 +37,7 @@ namespace Composite
         }
         public override void print()
         {
-            Console.WriteLine("\n" + getName());
+            Console.Write(getName() + ", ");
             Console.WriteLine(getDescription());
             Console.WriteLine("---------------------");
 
@@ -45,6 +45,7 @@ namespace Composite
             {
                 menuComponent.print();
             }
+            Console.Write("\n\n");
         }
     }
 }
